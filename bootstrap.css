@@ -1,0 +1,119 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.container-fluid {
+    background-image: linear-gradient(to bottom,  hsl(273, 75%, 66%),  hsl(273,72%, 63%) ,hsl( 240,73%,65%));
+    width: 100%;
+    display: grid;
+    position:cover ;
+    height: 150vh;
+}
+#card { 
+    width: 300px;
+    height: 70vh;
+    box-sizing: border-box;
+    border-radius: 50px;
+    margin: 125px 25px 30px 25px;
+    padding-top: 50px; 
+    position: fixed;
+    display: grid;
+
+
+} 
+
+#woman img {
+    margin: -85px 40px 0 40px;
+    width: 200px; 
+    padding-left: 20px;
+    filter: drop-shadow(2px 5px) 0.5;
+
+} 
+
+h2.faq {
+    margin: 30px 60px 2px 60px;
+    padding-left: 55px;
+    font-size: 25px;
+    font-weight: 700;
+    
+}
+.divider{
+    color: hsl(240, 5%, 91%);
+}
+
+.accordion-header{
+    margin: 8px 5px 8px 5px;
+
+}
+.accordion {
+    margin:2px ;
+
+}
+
+.accordion-item {
+    font-size: 12px;
+    color: hsl(240,6%,50%);
+    border-top-color: hsl(240, 5%, 91%);
+    border-bottom-color:hsl(240, 5%, 91%) ;
+    
+}
+.accordion-button {
+    font-size: 12px;
+    color: hsl(237,12%,33%);
+    font-weight: 700;
+    border-top-color: hsl(240, 5%, 91%);
+    border-bottom-color: hsl(240, 5%, 91%);
+}
+.accordion-button[aria-expanded="true"] {
+    color: orange;
+    cursor: pointer;
+}
+ 
+.accordion-button:not(.collapsed)::after {
+    background-image: url(./img/icon-arrow-down.svg);
+    background-repeat: none;
+   
+}
+.accordion-button.collapsed::after{
+    background-image: url(./img/icon-arrow-down.svg);
+    background-repeat: none;
+    transform: 180deg;    
+}
+@media only screen and (max-width:1440px) {
+    .container-fluid {
+        position: absolute;
+        height: 100vh;
+    }
+    
+
+    #card {
+
+       display: flex;
+       flex-direction: row;
+        width: 800px;
+        height: 70vh;
+        justify-content: center;
+        align-content: center;
+        margin-left: 150px;
+        padding-left: 70px;
+        position: relative;
+        
+    
+       }
+       
+    #woman img {
+             width: 180px;
+             margin-top:90px ;
+             margin-left: -60px;
+    
+         }
+    
+         h2.faq {
+             margin: 30px 60px 2px 60px;
+             padding-left: 55px;
+             font-size: 25px;
+             font-weight: 700;
+    
+         }
+        }
